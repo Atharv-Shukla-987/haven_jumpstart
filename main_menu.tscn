@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cvyg1tpfpmbv3"]
+
+[ext_resource type="Texture2D" uid="uid://31hye2ibswfu" path="res://Free/Background/Green.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://bk7wyb3xevval" path="res://main_menu.gd" id="1_7vrkn"]
+
+[node name="main_menu" type="Control" unique_id=2099077623]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="Green" type="Sprite2D" parent="." unique_id=947815218]
+position = Vector2(575.99994, 323.99997)
+scale = Vector2(17.999998, 10.124999)
+texture = ExtResource("1_06t4h")
+
+[node name="Button" type="Button" parent="." unique_id=1261211069]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 290.0
+offset_right = 687.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(0.021434566, 0.021434668, 0.021434598, 1)
+theme_override_font_sizes/font_size = 64
+text = "START"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
